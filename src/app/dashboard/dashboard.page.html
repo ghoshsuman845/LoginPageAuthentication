@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+   <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        Welcome to Dashboard!
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        Your Registered EmailID : {{userEmail}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>  
+  <br><br>
+ 
+  <div id="container"  style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+  
+  
+</ion-content>
+<ion-footer (click)="logout()">
+  <ion-toolbar color="secondary">
+    <ion-title>Log out</ion-title>
+  </ion-toolbar>
+</ion-footer>
